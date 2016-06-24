@@ -2,14 +2,14 @@ language: node_js
 
 # Version number
 node_js:
-  - 0.10
-  - 0.11
+  - 0.12
+  #- 0.11
   
 
 
 build:
   ci:
     - node --version
-    - sleep 7m
+    - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
     
   
