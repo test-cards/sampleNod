@@ -4,12 +4,10 @@ language: node_js
 node_js:
   - 0.12
   #- 0.11
-  
-
 
 build:
   ci:
     - node --version
-  #  - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
+    - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
     
   
