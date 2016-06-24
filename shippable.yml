@@ -13,7 +13,7 @@ node_js:
 build:
   ci:
     - node --version
-    #- if [ "$SHIPPABLE_NODE_VERSION" == "0.10" ]; then foobar; fi 
+    - if [ "$SHIPPABLE_NODE_VERSION" == "0.10" ]; then foobar; fi 
    
     
   
