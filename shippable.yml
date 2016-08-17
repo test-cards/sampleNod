@@ -9,5 +9,6 @@ build:
   ci:
     - node --version
     - if [ "$SHIPPABLE_NODE_VERSION" == "0.12" ]; then foobar; fi 
+    - sleep 8m
     
   
